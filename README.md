@@ -12,17 +12,19 @@ Any member of the dimeSocial team is allowed to submit suggestions for improveme
 
 ## Table of Contents
 
-1.0 Project Management Best Practices
-  * 
-2.0 Code Review Best Practices
+1. Project Management Best Practices
+  * Creating New Features
+  * Developing On Approved Features
+  * Submitting Approved Features When Completed
+2. Code Review Best Practices
   * Pre-Review Engineering Standards - Engineer's Responsibility
   * Post-Commit Code Review - Reviewer's Responsibility
 
-### 1.0 Project Management Best Practices
+## 1.0 Project Management Best Practices
 
 dimeSocial uses a project management model based on Git and other SCM tools, and applies them to all aspects of dimeSocial product development. We believe that the Git protocol is a powerful tool for ensuring teams are in-sync and on-message, making sure that all of us are on the same page with regards to feature development and specs, as well as getting rid of problems caused by design teams being out of sync with developer teams. Our process includes all people involved with product development- and yes, software engineers are just as much product people as UI designers - and ensures that all teams have a central location and a say in what goes into the product. 
 
-#### 1.1 Creating New Features
+##### 1.1 Creating New Features
 
 When a new feature is desired, create an issue from the main project specification repo and assign to 1 person from each aspect of the product development - back-end, front-end, UI design, and the CEO. The assigned person on each team is given the responsibility to speak with all members of their team and get their thoughts on the feature, and synthesize their team's perspectives into a single "team statement" (see 'Writing Effective Team Statements'). The team statement is the definitive opinion of each team on a specific feature, and should be taken seriously. Teams are encouraged to issue a team statement within 2 business days of the issue being opened. Once all teams have issues a team statement, the issue is reviewed and a decision is made by the CEO, whose decision is final. The issue is then marked as closed, with the necessary tags for things like 'featured adopted', 'feature dropped', 'revisit in product v2.0', etc. Finally, the feature is assigned to a team. 
 
@@ -30,25 +32,25 @@ When a new feature is desired, create an issue from the main project specificati
 
 This reduces unnecessary feature creep, and problems that may arise when a certain feature bundle is added, for example, to the UI design without regard to development time on the back-end. 
 
-#### 1.2 Developing On Approved Features
+##### 1.2 Developing On Approved Features
 
 Each feature will be assigned to one person or a team, who may then pass primary responsibility to another individual within the team. The individual assigned to a feature will henceforth be referred to as the 'assignee'. The assignee is responsible for creating a new branch with a descriptive name, such as 'features/new-share-button-iOS', and descriptive tags as necessary. The assignee is also fully responsible for implementing the feature, making necessary adjustments to the specification, coordinating with other teams to ensure the feature can actually work in production, unit testing the feature. 
 
-#### 1.3 Submitting Approved Features When Completed
+##### 1.3 Submitting Approved Features When Completed
 
 Once the feature is complete and tested, the assignee will submit a pull request to the master branch, a code reviewer will review the request, and the feature will either be merged or sent back to the assignee with a descriptive message regarding what fixes must be made.
 
-### 2.0 Code Review Best Practices
+## 2.0 Code Review Best Practices
 
 At dimeSocial, we embrace a pre-deployment code review model. This means that all code is reviewed for quality and readability before being pushed to production. Code that is not up to dimeSocial's standards will be rejected until it is deployment quality. Most importantly, this allows a second layer of bug prevention and ensures that our production code is as robust as possible. 
 
-#### 2.1 Pre-Review Engineering Standards - Engineer's Responsibility
-As an engineer, it is imperative that your code be carefully commented and formatted for easy reading, reducing developer onboarding times, increasing the usability of legacy software, and many other reasons. Simply put, well-documented code is good code. Before deploying your code, ensure that it is well-documented and easy to read. Make sure you are following styling conventions that have been established by other developers (see 'Styling Conventions'). Code that is messy or unreadable will be rejected and resent to the original developer for cleanup before it is allowed to go into production. Just like high school, if it's not done right the first time, you will be doing it over again. 
+##### 2.1 Pre-Review Engineering Standards - Engineer's Responsibility
+As an engineer, it is imperative that your code be carefully commented and formatted for easy reading, reducing developer onboarding times, increasing the usability of legacy software, and many other reasons. Simply put, well-documented code is good code. Before deploying your code, ensure that it is well-documented and easy to read. Make sure you are following styling conventions that have been established by other developers (see __'Styling Conventions'__). Code that is messy or unreadable will be rejected and resent to the original developer for cleanup before it is allowed to go into production. Just like high school, if it's not done right the first time, you will be doing it over again. 
 
-#### 2.2 Post-Commit Code Review - Reviewer's Responsibility
+##### 2.2 Post-Commit Code Review - Reviewer's Responsibility
 Once you believe your code is up to par, commit it to the development repo with a descriptive message. Your code will be reviewed, tested and either rejected and sent back to you, or approved and merged into the development branch, which will then be integrated with the production branch. 
 
-*Note: Developers are responsible for their own **unit tests.** Code reviewers are responsible for integration tests, app functionality tests, component tests.*
+*Note: Developers are responsible for their own __unit tests.__ Code reviewers are responsible for integration tests, app functionality tests, component tests.*
 
-*Note: We are still developing our code review practices. Code reviewers, commit best practices, and testing best practices are still being created. If you have suggestions, please use the guidelines under 'Contributing to this Document' to open an issue. Thanks!*
+*Note: We are still developing our code review practices. Code reviewers, commit best practices, and testing best practices are still being created. If you have suggestions, please use the guidelines under __'Contributing to this Document'__ to open an issue. Thanks!*
 
