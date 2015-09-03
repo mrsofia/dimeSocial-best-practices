@@ -1,20 +1,6 @@
 # dimeSocial-best-practices
 Best practices &amp; process outlines for development at dimeSocial.
 
-## Table of Contents
-
-1. Statement of Purpose
-2. Scope of This Document
-3. Contributing to This Document
-4. Best Practices
-  1. Project Management Best Practices
-    1. Creating New Features
-    2. Developing On Approved Features
-    3. Submitting Approved Features When Completed
-  2. Code Review Best Practices
-    1. Pre-Review Engineering Standards - Engineer's Responsibility
-    2. Post-Commit Code Review - Reviewer's Responsibility
-
 
 ## Statement of Purpose
 This document is borne out of a need to create process standards at dimeSocial, shorten development cycles, improve communication processes, and ensure long-term codebase viability. By creating a culture of engineering, we will achieve not only superior codebase quality and efficiency, but will learn best practices that can apply to our future endeavors as well!
@@ -32,6 +18,16 @@ Any member of the dimeSocial team is allowed to submit suggestions for improveme
 3. Approval and Branching. If approved, the admin will assign the issue to the appropriate person (the 'assignee'), who will create a branch with a descriptive name such as 'new-feature/<feature-name-goes-here>'. 
 
 4. Merging Changes. Once the branch has been completed, the branch assignee will submit a pull request to the master document. The pull request will be reviewed by the admin, and if approved, the branch will be merged and the issue will be closed. Voila! :smile:
+
+## Table of Contents
+
+1. Project Management Best Practices
+  1. Creating New Features
+  2. Developing On Approved Features
+  3. Submitting Approved Features When Completed
+2. Code Review Best Practices
+  1. Pre-Review Engineering Standards - Engineer's Responsibility
+  2. Post-Commit Code Review - Reviewer's Responsibility
 
 
 ## Project Management Best Practices
